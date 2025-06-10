@@ -9,7 +9,7 @@
 
 */
 
-// let favouriteActor = {
+// const favouriteActor = {
     
 // };
 // favouriteActor.name = 'Ryan Gosling';
@@ -32,6 +32,7 @@
 //     let isEmpty = true
 //     for (let key in object) {
 //         isEmpty = false;
+//         break;
 //     }
 //     if (isEmpty) {
 //         console.log('Этот обьект пустой')
@@ -68,27 +69,27 @@
     
 */
 
-// var staff = {
-//         'Ivan' : 2000,
-//         'Andrey' : 1440,
-//         'Marina' : 5187,
-//         'Oleg' : 3309,
-//         'Anna' : 2304,
-//     };
+var staff = {
+        'Ivan' : 2000,
+        'Andrey' : 1440,
+        'Marina' : 5187,
+        'Oleg' : 3309,
+        'Anna' : 2304,
+    };
 
-// function maxSalary(object) {
-//     let max = 0;
-//     let name = null;
-//     for (key in object) {
-//         if (object[key] > max) {
-//             max = object[key];
-//             name = key;
-//         }
-//     }
-//     return name
-// }
+function maxSalary(object) {
+    let max = 0;
+    let name = null;
+    for (let key in object) {
+        if (object[key] > max) {
+            max = object[key];
+            name = key;
+        }
+    }
+    return name
+}
 
-// console.log(maxSalary(staff))
+console.log(maxSalary(staff))
 
 
 /* 
